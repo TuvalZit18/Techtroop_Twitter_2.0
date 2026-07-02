@@ -6,6 +6,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 /* 2. Global variables (BEST PLACE) */
@@ -49,6 +51,7 @@
      SURFACE / BACKGROUND
   ========================= */
   --background: #fff8f3;
+  --background-80: #fff8f3cc;
   --on-background: #1f1b16;
 
   --surface: #fff8f3;

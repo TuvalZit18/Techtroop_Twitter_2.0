@@ -1,0 +1,43 @@
+.desktop-header-wrapper {
+  position: sticky;
+  display: block;
+  top: 0;
+  background-color: var(--background-80);
+  backdrop-filter: blur(12px);
+  z-index: 50;
+  border-bottom: 1px solid;
+  border-color: var(--outline-variant);
+  border: 1px solid red;
+  width: 100%;
+}
+.desktop-header-container {
+  display: flex;
+  border: 1px solid pink;
+  width: 100%;
+}
+.btn-foryou {
+  padding: var(--spacing-md) 0;
+  position: relative;
+  background-color: var(--background);
+  cursor: pointer;
+  position: relative;
+  flex-grow: 1;
+}
+.btn-bottom-ruler {
+  display: none;
+  position: absolute;
+  height: 0.5rem;
+  width: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  border-radius: var(--radius-full);
+  bottom: 0;
+}
+.btn-foryou:hover > .btn-bottom-ruler {
+  display: inherit;
+}
+.btn-foryou-text {
+  font-weight: bold;
+  color: var(--on-surface);
+}
