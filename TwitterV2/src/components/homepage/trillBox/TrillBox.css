@@ -66,3 +66,16 @@
   font-weight: bold;
   cursor: pointer;
 }
+.btn-trill:hover {
+  transform: scale(1.05);
+}
+.btn-trill.active {
+  transform: scale(0.95);
+}
+.btn-trill:disabled {
+  cursor: not-allowed;
+  background-color: var(--error-container);
+}
+.trillBox-char-warning {
+  color: var(--error);
+}

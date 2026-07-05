@@ -1,5 +1,6 @@
 import "./TrillCard.css";
-const TrillCard = () => {
+
+const TrillCard = ({ trill }) => {
   return (
     <article className="tillCard-wrapper">
       <img
@@ -8,14 +9,12 @@ const TrillCard = () => {
       />
       <div className="tillCard-container">
         <div className="tillCard-profile-info-container"></div>
-        <span className="tillCard-profile-name">Jane Doe</span>
+        <span className="tillCard-profile-name">{trill.userName}</span>
         <span className="tillCard-profile-username">@JD18</span>
-        <span className="tillCard-datetime">· 5h</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquid
-          necessitatibus nobis totam fugiat, quisquam aperiam ipsum sit
-          perspiciatis commodi!
-        </p>
+        <span className="tillCard-datetime">
+          · {new Date(trill.date).toLocaleString()}
+        </span>
+        <p>{trill.content}</p>
         <div className="trillCard-image-container">
           <img
             className="trillCard-image"
@@ -25,26 +24,25 @@ const TrillCard = () => {
         <div className="trillCard-controls-container">
           <div className="control-container">
             <button className="btnComments">
-              <span class="material-symbols-outlined">favorite</span>
+              <span className="material-symbols-outlined">favorite</span>
             </button>
             <span>180</span>
           </div>
           <div className="control-container">
             <button className="btnComments">
-              <span class="material-symbols-outlined">chat_bubble</span>
+              <span className="material-symbols-outlined">chat_bubble</span>
             </button>
             <span>180</span>
           </div>
           <div className="control-container">
             <button className="btnComments">
-              <span class="material-symbols-outlined">repeat</span>
+              <span className="material-symbols-outlined">repeat</span>
             </button>
             <span>180</span>
           </div>
-
           <div className="control-container">
             <button className="btnComments">
-              <span class="material-symbols-outlined">share</span>
+              <span className="material-symbols-outlined">share</span>
             </button>
             <span>180</span>
           </div>
