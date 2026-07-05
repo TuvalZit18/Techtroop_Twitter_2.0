@@ -18,6 +18,8 @@
   --primary: #6f0001;
   --primary-container: #9a0002;
   --primary-fixed: #ffdad5;
+  --primary-fixed-30: #ffdad54d;
+
   --primary-fixed-dim: #ffb4a9;
   --on-primary: #ffffff;
   --on-primary-container: #ffa294;
@@ -55,6 +57,7 @@
   --on-background: #1f1b16;
 
   --surface: #fff8f3;
+  --surface-60: #fff8f399;
   --surface-bright: #fff8f3;
   --surface-dim: #e1d9d0;
 
@@ -63,6 +66,7 @@
   --on-surface-variant: #5b403c;
 
   --surface-container: #f6ece3;
+  --surface-container-30: #f6ece34d;
   --surface-container-low: #fbf2e9;
   --surface-container-lowest: #ffffff;
   --surface-container-high: #f0e7de;
@@ -87,6 +91,7 @@
   ========================= */
   --outline: #8f706b;
   --outline-variant: #e4beb8;
+  --outline-variant-30: #e4beb84d;
 
   /* =========================
      Borders

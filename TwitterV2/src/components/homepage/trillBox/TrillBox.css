@@ -1,0 +1,68 @@
+.trillBox-wrapper {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid;
+  border-color: var(--outline-variant);
+  display: flex;
+  gap: var(--spacing-md);
+}
+.trillBox-profile-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.trillBox-container {
+  flex-grow: 1;
+}
+
+.trillBox-textarea {
+  width: 100%;
+  background-color: transparent;
+  font-size: var(--font-size-title-md);
+  font-weight: var(--font-weight-title-md);
+  line-height: var(--line-height-title-md);
+  resize: none;
+  padding: var(--spacing-xs) 0;
+  min-height: 100px;
+}
+.trillBox-textarea:focus {
+  outline: none;
+}
+.trillBox-textarea::placeholder {
+  color: var(--on-surface-variant);
+}
+
+.trillBox-attachments-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid;
+  border-color: var(--outline-variant-30);
+  margin: (--spacing-sm) 0;
+}
+.trillBox-attachments-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  color: var(--primary);
+}
+.btn-attachment {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-full);
+  transition: background-color;
+  cursor: pointer;
+}
+.btn-attachment:hover {
+  background-color: var(--primary-fixed-30);
+}
+.btn-trill {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border-radius: var(--radius-full);
+  font-weight: bold;
+  cursor: pointer;
+}
