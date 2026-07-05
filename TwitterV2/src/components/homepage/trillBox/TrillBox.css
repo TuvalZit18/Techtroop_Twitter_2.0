@@ -69,7 +69,7 @@
 .btn-trill:hover {
   transform: scale(1.05);
 }
-.btn-trill.active {
+.btn-trill:active {
   transform: scale(0.95);
 }
 .btn-trill:disabled {

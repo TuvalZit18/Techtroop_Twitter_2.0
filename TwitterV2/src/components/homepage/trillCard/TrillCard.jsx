@@ -1,3 +1,4 @@
+import { formatRelativeTime } from "../../../utils/hooks/formatRelativeTimes";
 import "./TrillCard.css";
 
 const TrillCard = ({ trill }) => {
@@ -12,7 +13,7 @@ const TrillCard = ({ trill }) => {
         <span className="tillCard-profile-name">{trill.userName}</span>
         <span className="tillCard-profile-username">@JD18</span>
         <span className="tillCard-datetime">
-          · {new Date(trill.date).toLocaleString()}
+          · {formatRelativeTime(trill.date)}{" "}
         </span>
         <p>{trill.content}</p>
         <div className="trillCard-image-container">
