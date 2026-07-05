@@ -8,6 +8,7 @@
   text-decoration: none;
   border: none;
   outline: none;
+  background: none;
 }
 
 /* 2. Global variables (BEST PLACE) */
@@ -16,6 +17,7 @@
      PRIMARY
   ========================= */
   --primary: #6f0001;
+  --primary-10: #6f00011a;
   --primary-container: #9a0002;
   --primary-fixed: #ffdad5;
   --primary-fixed-30: #ffdad54d;

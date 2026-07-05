@@ -1,0 +1,82 @@
+.tillCard-wrapper {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  transition: background-color;
+  cursor: pointer;
+}
+.tillCard-wrapper:hover {
+  background-color: var(--surface-container-30);
+}
+
+.tillCard-profile-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.tillCard-container {
+  flex-grow: 1;
+}
+.tillCard-profile-info-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+.tillCard-profile-name {
+  font-weight: bold;
+  color: var(--on-surface);
+}
+.tillCard-profile-name:hover {
+  text-decoration: underline;
+}
+.tillCard-profile-username {
+  color: var(--on-surface-variant);
+  font-size: var(--font-size-body-md);
+  line-height: var(--font-size-body-md);
+  font-weight: var(--font-size-body-md);
+}
+.tillCard-datetime {
+  color: var(--on-surface-variant);
+  font-size: var(--font-size-body-md);
+  line-height: var(--font-size-body-md);
+  font-weight: var(--font-size-body-md);
+}
+.trillCard-image-container {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border-color: var(--outline-variant);
+  margin-bottom: var(--spacing-md);
+  height: 300px;
+}
+.trillCard-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.trillCard-controls-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 28rem;
+  color: var(--on-surface-variant);
+}
+.control-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 18px;
+}
+.btnComments {
+  display: flex;
+  transition: color;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-full);
+}
+.btnComments:hover {
+  color: var(--primary);
+  font-variation-settings: "FILL" 1;
+}
